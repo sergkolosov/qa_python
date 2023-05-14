@@ -41,7 +41,7 @@ class TestBooksCollector:
         assert self.collector.get_books_rating() == {self.book_1: 1, self.book_2: 1, self.book_3: 1}
 
     def test_add_new_book_add_impossible_add_book_twice(self):
-        # Нельзя добавить одну и ту же книгу дважды (количество книг не меняется)
+        # нельзя добавить одну и ту же книгу дважды (количество книг не меняется)
         self.collector.add_new_book(self.book_1)
         assert len(self.collector.get_books_rating()) == 3
 
