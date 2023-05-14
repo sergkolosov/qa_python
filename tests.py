@@ -17,6 +17,6 @@ class TestBooksCollector:
         return self.collector
 
     def test_add_new_book_add_two_books(self):
-        # проверяем, что добавилось именно две книги
-        # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 2
-        assert len(self.collector.get_books_rating()) == 2
+        # проверяем, что добавилось именно три книги
+        # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 3
+        assert len(self.collector.get_books_rating()) == 3
